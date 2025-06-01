@@ -10,7 +10,7 @@ Blog API dibuat dengan tujuan untuk menyelesaikan tugas technical test.
 * Sistem Role User (Admin, Writer, User)
 
 ## Requirement
-Berikut adalah requirement dari aplikasi ini [here](requirement.txt) 
+Berikut adalah requirement dari aplikasi ini [here](requirement) 
 
 ## Langkah-Langkah Instalasi & Menjalankan Aplikasi
 
