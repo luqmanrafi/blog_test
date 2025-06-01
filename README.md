@@ -19,8 +19,8 @@ Berikut adalah panduan untuk menjalankan aplikasi ini di environment lokal:
 **1. Clone Repository:**
 
    ```bash
-   git clone [URL_REPOSITORY_GIT_KAMU]
-   cd [NAMA_FOLDER_PROYEK_KAMU]
+   git clone https://github.com/luqmanrafi/blog_test.git
+   cd blog_test
    ```
 **2. Install dependencies:**
 ```bash
