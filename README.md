@@ -10,11 +10,7 @@ Blog API dibuat dengan tujuan untuk menyelesaikan tugas technical test.
 * Sistem Role User (Admin, Writer, User)
 
 ## Requirement
-Pastikan sudah terinstall berikut:
-
-* PHP 8.1+
-* Composer
-* Mysql 8.0
+Berikut adalah requirement dari aplikasi ini [here](requirement.txt) 
 
 ## Langkah-Langkah Instalasi & Menjalankan Aplikasi
 
