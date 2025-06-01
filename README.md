@@ -67,3 +67,6 @@ php artisan serve
 ```
 
 ## Link video
+
+## Link RESTful API documentation
+https://documenter.getpostman.com/view/34883889/2sB2qgedy2
