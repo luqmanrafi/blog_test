@@ -52,9 +52,9 @@ php artisan key:generate
 php artisan jwt:secret
 ```
 
-**7. Database**
+**7. Migrate & Seeding Database**
 ```bash
-php artisan migrate
+php artisan migrate:fresh --seed
 ```
 
 **8. Jalankan server**
