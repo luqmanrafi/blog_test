@@ -24,7 +24,7 @@ class CategoryController extends Controller
         
         $data = Category::with('articles')->get();
         if ($data->isEmpty()) {
-            return response()->json(['message' => 'No categories found'], 200);
+            return response()->json(['error' => 'No categories found'], 404);
         }
         return response()->json($data, 200);
     }
@@ -41,9 +41,9 @@ class CategoryController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
+    { 
         // Only admin can create a category
-        $role = Auth::user()->role_id == 1; 
+        $role = Auth::user()->role_id == 1;
         if (!$role) {
             return response()->json(['error' => 'Access denied. Can not create Category'], 403);
         };

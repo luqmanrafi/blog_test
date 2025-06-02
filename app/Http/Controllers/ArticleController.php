@@ -109,14 +109,17 @@ class ArticleController extends Controller
         try{
             $article = Article::findOrFail($id);
             try{
-                $article->update();
+                $article->update([
+                    'title' => $request->title,
+                    'content' => $request->content
+                ]);
             } catch(Exception $e){
                 return response()->json(['Error' => 'Update failed.', $e->getMessage()], 500);
             }
+            return response()->json(['message' => 'Article updated successfully'], 201);
         } catch(ModelNotFoundException $e){
             return response()->json(['Error' => 'Update failed. Article id not found'], 404);
         }
-        return response()->json(['message' => 'Article updated successfully'], 201);
     }
 
     /**
@@ -150,7 +153,6 @@ class ArticleController extends Controller
                 'keyword' => 'nullable|string|max:255',
          ]);
         $query = Article::query();
-
 
         if (!empty($validatedData['category_id'])) {
             $query->where('category_id', $request->category_id);
