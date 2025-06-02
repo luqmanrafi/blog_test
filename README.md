@@ -63,6 +63,6 @@ php artisan serve
 ```
 
 ## Link video
-
+Link video demonstrasi [here](https://drive.google.com/file/d/1iDTNlpIwt318Rbrtw_aRJEjpLRROa5Rj/view?usp=sharing)
 ## Link RESTful API documentation
 https://documenter.getpostman.com/view/34883889/2sB2qgedy2
